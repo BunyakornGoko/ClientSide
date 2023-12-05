@@ -47,3 +47,4 @@ function underPerformStudents(students) {
   }).filter((student) => student.attendanceRate < 80 && student.AvgScores < 70)
 }
 console.log(underPerformStudents(students))
+// module.exports = {getAttendaceRate,getAvgScore,underPerformStudents}

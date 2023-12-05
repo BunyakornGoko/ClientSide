@@ -20,12 +20,12 @@ function findMemberId(id){
 }
 
 function findMemberId2(id){
-    const findId = members.findIndex((member => member.memberId === id))
-    if(findId === -1){
+    const findIndex = members.findIndex((member => member.memberId === id))
+    if(findIndex === -1){
         return -1
     }
-    let find = findId + 1
-    return find
+    let findId = findIndex + 1
+    return findId
 }
 // console.log(findMemberId(2));
 // console.log(findMemberId2(2));
@@ -53,4 +53,7 @@ function unsubscribe(id){
     }
     return -1
 }
-console.log(unsubscribe(1));
+console.log(unsubscribe(2));
+
+// const {getAttendaceRate,getAvgScore,underPerformStudents} = require('./exam')
+// console.log(getAttendaceRate());
