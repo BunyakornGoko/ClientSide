@@ -3,7 +3,7 @@ const colorInput = document.getElementById('your_color')
 const sizeText = document.getElementById('select_front')
 const submit = document.getElementById('submit')
 
-colorInput.addEventListener('change' , (e) => {
+colorInput.addEventListener('input' , (e) => {
     let colorInputCode = colorInput.value
     background.style.backgroundColor = colorInputCode
     localStorage.setItem('colorInputCode' , colorInputCode)
